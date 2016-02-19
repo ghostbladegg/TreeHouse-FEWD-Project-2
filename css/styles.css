@@ -1,0 +1,383 @@
+/* GENERAL */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ddd;
+} /* Body color */
+
+a, a:visited {
+	text-decoration: none;
+	color: #333;
+} /* Anchor and visited style */
+
+a:hover {
+	color: #777;
+} /* Link style on hover 8*/
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+} /* Unordered list bullet, margin, padding removal. */
+
+img {
+	width: 95%;
+}
+
+p, h3 {
+	margin: 0;
+} /* Remove paragraph default margin ( margin: 16px 0; ) */
+
+.container {
+	margin: auto;
+} /* Body content wrapper */
+
+hr { 
+	width: 90%;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/* FONTS */
+.main-header, .main-nav, .me, .portfolio, .contact, .main-footer {
+	font-family: 'Slabo 27px', serif;
+}
+
+/* HEADER */
+.main-header {
+	text-align: center;
+} /* Main header style */
+
+.name {
+	margin: 0;
+	padding: 25px 0;
+	color: red;
+	font-size: 2em;
+}
+
+.main-nav {
+	padding: 0 10px;
+	color: red;
+}
+	
+.main-nav a {
+	display: block;
+	background-color: #fff;
+	padding: 10px 0;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.4em;
+} /* Navigation styling */
+
+.main-nav li {
+	padding: 2.5px 0;
+} /* Navigation Gap */
+
+
+
+/* Me */
+.me {
+	margin: 50px 0;
+} /* Me Gap */
+
+.me img {
+	display: block;
+	width: 75%;
+	margin: -20px auto 20px auto;
+}
+
+.me p {
+	padding: 15px 10px 0 10px;
+	text-align: center;
+	line-height: 25px;
+	color: #777;
+	font-size: 1.2em;
+}
+
+
+
+/* PORTFOLIO */
+.portfolio {
+	background-color: #fff;
+	margin: 25px 0;
+	text-align: center;
+}
+
+.portfolio h2 {
+	padding: 30px 0;
+	font-size: 1em;
+	font-size: 1.4em;
+}
+
+.content h3, .portfolio h2 {
+	color: #333;
+}
+
+.content p {
+	padding: 15px 10px 0 10px;
+	color: #777;
+	font-size: 1.2em;
+}
+
+.content li {
+	margin-bottom: 40px;
+}
+
+.content h3 {
+	margin-top: 10px;
+	font-size: 1.3em;
+}
+
+/* CONTACT */
+.contact {
+	padding-top: 10px;
+	text-align: center;
+}
+
+.contact h2 {
+	font-size: 1.3em;
+	padding-bottom: 15px;
+	color: #333;
+}
+.contact li {
+	display: block;
+	margin: 25px 0;
+}
+
+.contact p {
+	padding: 15px 10px 0 10px;
+}
+
+.info, .info a, .contact p {
+	color: #777;
+	font-size: 1.2em;
+}
+
+.infolink {
+	color: #333;
+	font-size: 1.2em;
+}
+
+
+/* FOOTER */
+.main-footer {
+	font-size: .8em;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1em;
+}
+
+.footer-name {
+	margin: 10px 0 20px 20px;
+	float: left;
+}
+ .back {
+ 	margin: 10px 20px 20px 0;
+ 	float: right;
+ }
+ 
+.footer-nav {
+	display: none;
+}
+
+
+/* MEDIA QUERIES */
+/* 768 */
+@media (min-width: 768px) {
+	/* 768 GENERAL */
+	.container {
+		width: 100%;
+	}
+
+	/* 768 HEADER */
+	.name {
+		font-size: 1.5em;
+	}
+
+	.main-nav a {
+		background-color: #ddd;
+		font-size: 1em;
+	}
+	.main-nav li {
+		display: inline-block;
+		padding: 0 15px;
+	}
+
+
+
+	/* 768 ME */
+	.me img {
+		padding-right: 20px;
+		margin: auto;
+		width: 35%;
+		float: right;
+	}
+
+	.me p {
+		padding-left: 20px;
+		padding-top: 0;
+		width: 60%;
+		float: left;
+		text-align: left;
+	}
+
+	/* 768 PORTFOLIO */
+	.portfolio h2 {
+		font-size: 1em;
+	}
+
+	.content h3 {
+		font-size: 1.1em;
+	}
+
+	.content p {
+		font-size: 1em;
+	}
+
+	.odd {
+		width: 50%;
+		float: left;
+		clear: left;
+	}
+
+	.even {
+		width: 50%;
+		float: right;
+		clear: right;
+	}
+
+	/* 768 CONTACT */
+	.contact h2 {
+		font-size: 1.1em;
+	}
+
+	.contact p {
+		padding: 0 150px;
+		font-size: 1.2em;
+	}
+
+	/* 768 FOOTER */
+	hr {
+		width: 95%;
+	}
+
+	.back {
+		display: none;
+	}
+
+	.footer-nav {
+		display: inline-block;
+		float: right;
+	}
+
+	.footer-nav li {
+		display: inline-block;
+		margin: 10px 20px 20px 0;
+	}
+}
+
+
+
+
+@media (min-width: 1024px) {
+	/* 1024 GENERAL */
+	.container {
+		width: 100%;
+	}
+
+	/* 1024 HEADER */
+	.name {
+		float: left;
+		padding: 25px;
+		font-size: 2em;
+	}
+
+	.main-nav {
+		float: right;
+		padding: 25px;
+		font-size: 1.3em;
+	}
+
+	/* 1024 ME */
+	.me p {
+		padding-left: 25px;
+		font-size: 1.8em;
+		line-height: 1.2em;
+	}
+
+	.me img {
+		padding-right: 25px;
+	}
+
+	/* 1024 PORTFOLIO */
+	.portfolio h2 {
+		font-size: 1.3em;
+	}
+
+	.content h3 {
+		font-size: 1.3em;
+	}
+
+	.content p {
+		font-size: 1.2em;
+	}
+
+	.even, .odd {
+		clear: none;
+		float: none;
+	}
+	
+	.left {
+		float: left;
+		clear: left;
+		padding-left: 20px;
+	}
+	
+	.center {
+		float: left;
+	}
+	.right {
+		float: right;
+		padding-right: 20px;
+	}
+
+	.content li {
+		width: 33.3333%;
+	}
+
+	/* 1024 CONTACT */
+	.contact h2 {
+		font-size: 1.3em;
+	}
+
+	.contact p {
+		font-size: 1.5em;
+		line-height: 1.2em;
+	}
+
+	.contact span, .contact a {
+		font-size: 1.5em;
+	}
+
+	/* 1024 FOOTER */
+	hr {
+		width: 95%;
+	}
+
+	.footer-name {
+		padding-left: 15px;
+		font-size: 1.2em;
+	}
+
+	.footer-nav {
+		padding-right: 15px;
+		font-size: 1.2em;
+	}
+}
